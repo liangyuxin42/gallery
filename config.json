@@ -9,6 +9,5 @@
   "theme": "flow",
   "theme-style": "./custom.css",
   "footer": "Copyright Text",
-  "usage-stats": false,
-  "theme-settings": "theme_options.json"
+  "usage-stats": false
 }
