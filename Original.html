@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Gallery of Liang Yuxin - Original</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
+  </head>
+
+  <body>
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Gallery of Liang Yuxin</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Original.html">Original</a>
+      </nav>
+    
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums" class="justified-gallery">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/The%20fall.png"data-src="media/large/Original/The%20fall.png"data-exthumbimage="media/thumbs/Original/The%20fall.png"data-filename="The fall.png"><a href="media/large/Original/The%20fall.png"><img
+                      src="media/small/Original/The%20fall.png"
+                      width="225"
+                      height="300"alt="The fall.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/noname-12.png"data-src="media/large/Original/noname-12.png"data-exthumbimage="media/thumbs/Original/noname-12.png"data-filename="noname-12.png"><a href="media/large/Original/noname-12.png"><img
+                      src="media/small/Original/noname-12.png"
+                      width="300"
+                      height="300"alt="noname-12.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/noname-5.png"data-src="media/large/Original/noname-5.png"data-exthumbimage="media/thumbs/Original/noname-5.png"data-filename="noname-5.png"><a href="media/large/Original/noname-5.png"><img
+                      src="media/small/Original/noname-5.png"
+                      width="400"
+                      height="300"alt="noname-5.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/noname-6.png"data-src="media/large/Original/noname-6.png"data-exthumbimage="media/thumbs/Original/noname-6.png"data-filename="noname-6.png"><a href="media/large/Original/noname-6.png"><img
+                      src="media/small/Original/noname-6.png"
+                      width="300"
+                      height="300"alt="noname-6.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/the%20star.png"data-src="media/large/Original/the%20star.png"data-exthumbimage="media/thumbs/Original/the%20star.png"data-filename="the star.png"><a href="media/large/Original/the%20star.png"><img
+                      src="media/small/Original/the%20star.png"
+                      width="400"
+                      height="300"alt="the star.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Original/woman-2.png"data-src="media/large/Original/woman-2.png"data-exthumbimage="media/thumbs/Original/woman-2.png"data-filename="woman-2.png"><a href="media/large/Original/woman-2.png"><img
+                      src="media/small/Original/woman-2.png"
+                      width="225"
+                      height="300"alt="woman-2.png"/>
+              </a>
+          
+          </div>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright Text</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
+        });
+      });
+    </script>
+
+
+
+  </body>
+
+</html>
